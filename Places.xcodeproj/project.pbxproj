@@ -17,6 +17,8 @@
 		FF47355A210A2E5700B5E736 /* PlacesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF473559210A2E5700B5E736 /* PlacesTableViewController.swift */; };
 		FF47355C210A2E8600B5E736 /* CreateNewPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF47355B210A2E8600B5E736 /* CreateNewPlaceViewController.swift */; };
 		FF47355E210A32C100B5E736 /* PlacesTable.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF47355D210A32C100B5E736 /* PlacesTable.storyboard */; };
+		FF473560210A3B0C00B5E736 /* PlacesTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF47355F210A3B0C00B5E736 /* PlacesTabBarController.swift */; };
+		FF473562210A3BBD00B5E736 /* PlacesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF473561210A3BBD00B5E736 /* PlacesPresenter.swift */; };
 		FF65F6D3210A2A58007758E1 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF65F6D2210A2A58007758E1 /* Place.swift */; };
 		FF65F6D5210A2B0A007758E1 /* PlaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF65F6D4210A2B0A007758E1 /* PlaceController.swift */; };
 /* End PBXBuildFile section */
@@ -34,6 +36,8 @@
 		FF473559210A2E5700B5E736 /* PlacesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesTableViewController.swift; sourceTree = "<group>"; };
 		FF47355B210A2E8600B5E736 /* CreateNewPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPlaceViewController.swift; sourceTree = "<group>"; };
 		FF47355D210A32C100B5E736 /* PlacesTable.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlacesTable.storyboard; sourceTree = "<group>"; };
+		FF47355F210A3B0C00B5E736 /* PlacesTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesTabBarController.swift; sourceTree = "<group>"; };
+		FF473561210A3BBD00B5E736 /* PlacesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesPresenter.swift; sourceTree = "<group>"; };
 		FF65F6D2210A2A58007758E1 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		FF65F6D4210A2B0A007758E1 /* PlaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,9 +72,10 @@
 		9DC8C28A210A1DAE00A4B391 /* Places */ = {
 			isa = PBXGroup;
 			children = (
+				9DC8C28B210A1DAE00A4B391 /* AppDelegate.swift */,
+				FF473563210A54A900B5E736 /* Protocols */,
 				FF65F6D6210A2B88007758E1 /* Models */,
 				FF65F6D7210A2B8F007758E1 /* Model Controllers */,
-				9DC8C28B210A1DAE00A4B391 /* AppDelegate.swift */,
 				9DC8C2A7210A1F5000A4B391 /* View Controllers */,
 				9DC8C29D210A1DB500A4B391 /* Resources */,
 			);
@@ -105,8 +110,17 @@
 				FF473557210A2E3200B5E736 /* VisitedPlacesViewController.swift */,
 				FF473559210A2E5700B5E736 /* PlacesTableViewController.swift */,
 				FF47355B210A2E8600B5E736 /* CreateNewPlaceViewController.swift */,
+				FF47355F210A3B0C00B5E736 /* PlacesTabBarController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		FF473563210A54A900B5E736 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FF473561210A3BBD00B5E736 /* PlacesPresenter.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		FF65F6D6210A2B88007758E1 /* Models */ = {
@@ -199,12 +213,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF65F6D3210A2A58007758E1 /* Place.swift in Sources */,
+				FF473562210A3BBD00B5E736 /* PlacesPresenter.swift in Sources */,
 				FF65F6D5210A2B0A007758E1 /* PlaceController.swift in Sources */,
 				9DC8C28C210A1DAE00A4B391 /* AppDelegate.swift in Sources */,
 				9DC8C2AD210A1F9F00A4B391 /* MapViewController.swift in Sources */,
 				FF473558210A2E3200B5E736 /* VisitedPlacesViewController.swift in Sources */,
 				FF47355C210A2E8600B5E736 /* CreateNewPlaceViewController.swift in Sources */,
 				FF47355A210A2E5700B5E736 /* PlacesTableViewController.swift in Sources */,
+				FF473560210A3B0C00B5E736 /* PlacesTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
